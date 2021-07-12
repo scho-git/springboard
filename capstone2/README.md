@@ -14,16 +14,16 @@ The below is a breakdown of this README:
 * [7. Future Improvements](#improve)
 
 # 1. Data <a name='data'></a>
-The analysis done is based on [this dataset from Kaggle](#https://www.kaggle.com/meetnaren/goodreads-best-books). The dataset itself is based on a [Goodreads list of best books ever](#https://www.goodreads.com/list/show/1.Best_Books_Ever), voted by the users of Goodreads. The list is updated every week and was scraped in 2019.  With about 54,000 entries, this project is sufficient enough to develop a basic model. To directly view the dataset and the Goodreads list, click on the links below:
+The analysis done is based on [this dataset from Kaggle](https://www.kaggle.com/meetnaren/goodreads-best-books). The dataset itself is based on a [Goodreads list of best books ever](https://www.goodreads.com/list/show/1.Best_Books_Ever), voted by the users of Goodreads. The list is updated every week and was scraped in 2019.  With about 54,000 entries, this project is sufficient enough to develop a basic model. To directly view the dataset and the Goodreads list, click on the links below:
 
-* [Kaggle Dataset](#https://www.kaggle.com/meetnaren/goodreads-best-books)
-* [Goodreads List of Best Books Ever](#https://www.goodreads.com/list/show/1.Best_Books_Ever)
+* [Kaggle Dataset](https://www.kaggle.com/meetnaren/goodreads-best-books)
+* [Goodreads List of Best Books Ever](https://www.goodreads.com/list/show/1.Best_Books_Ever)
 
 # 2. Method <a name='method'></a>
 This is a supervised learning problem, where I sorted the dataset by its ratings and labeled the top half of the group as ‘good’ and the bottom half as ‘bad.’ Using this to train the models, I built and tuned each model, and evaluated its performance against both each other and a dummy classifier model.
 
 # 3. Data Wrangling <a name='wrangle'></a>
-[Data Wrangling Notebook](#https://github.com/scho-git/springboard/blob/main/capstone2/data_wrangling.ipynb)
+[Data Wrangling Notebook](https://github.com/scho-git/springboard/blob/main/capstone2/data_wrangling.ipynb)
 
 * **Problem 1:** Missing values. There were quite a lot missing in the following features: edition, few in description, format, but importantly some were missing genres and pages.
   * **Solution:** Remove the ones with missing genres and pages since those are the primary features I’ll be focusing on. Remove the ones with more than 3 missing features. The rest of the missing values will be filled in as ‘missing’ so it’s not just empty.
@@ -48,7 +48,7 @@ This is a supervised learning problem, where I sorted the dataset by its ratings
   * **Solution:** None. For now, I’ve left the different languages as-is in the dataset to see how the models will do, but acknowledge this could be a potential issue.
 	
 # 4. EDA <a name='eda'></a>
-[EDA Notebook](#https://github.com/scho-git/springboard/blob/main/capstone2/eda.ipynb)
+[EDA Notebook](https://github.com/scho-git/springboard/blob/main/capstone2/eda.ipynb)
 
 ## The Ratings
 The ratings distribution looks relatively normal, centered around 4.0, but it is not without outliers. 
