@@ -1,8 +1,8 @@
 # GOODREADS: AN ANALYSIS
 
-Reading has been known to be quite important in developing the mind; to say the least, it improves brain connectivity and a person’s communication skills. Many school education systems even implement some sort of reading into their programs. However, just because it’s a part of healthy development and some school curricula does not mean that reading books is a chore and cannot be enjoyable. 
+Reading has been known to be quite important in developing the mind; to say the least, it improves brain connectivity and a person’s communication skills. Many school education systems even implement some sort of reading into their programs. However, just because it’s a part of healthy development and some school curricula does not mean that reading books should be a chore and cannot be enjoyable. 
 
-This analysis focuses on classifying some books as good or bad, so that not only can people enjoy reading but also publishing companies can look at what might be profitable.
+One way to increase reading is to focus on the already successful and popular books, and analyze them in order to reveal their secrets to not just getting thousands of readers, but also being well received by them. As such, this analysis focuses on well-rated books, so that not only can people enjoy reading but also publishing companies can look at what might be profitable.
 
 The below is a breakdown of this README:
 * [1. Data](#data)
@@ -20,7 +20,7 @@ The analysis done is based on [this dataset from Kaggle](https://www.kaggle.com/
 * [Goodreads List of Best Books Ever](https://www.goodreads.com/list/show/1.Best_Books_Ever)
 
 # 2. Method <a name='method'></a>
-This is a supervised learning problem, where I sorted the dataset by its ratings and labeled the top half of the group as ‘good’ and the bottom half as ‘bad.’ Using this to train the models, I built and tuned each model, and evaluated its performance against both each other and a dummy classifier model.
+This is a supervised learning problem, where I sorted the [dataset](#data) by its ratings and labeled the top half of the group as ‘good’ and the bottom half as ‘bad.’ As such, the model has balanced data. Using this to train the models, I built and tuned each model, and evaluated its performance against both each other and a dummy classifier model.
 
 # 3. Data Wrangling <a name='wrangle'></a>
 [Data Wrangling Notebook](https://github.com/scho-git/springboard/blob/main/capstone2/data_wrangling.ipynb)
@@ -74,6 +74,8 @@ There are also authors in the dataset with numerous works. Reigning with 146 wor
 
 # 5. Feature Engineering <a name='feng'></a>
 [Feature Engineering Notebook](https://github.com/scho-git/springboard/blob/main/capstone2/feature_engineering.ipynb)
+
+Sometimes authors themselves are inherently important; after all, if an author has produced a popular, well-rated book before, it would make sense to expect a similar result from that author's future works. As such, I thought it would be relevant to add features that contain information regarding author(s).
 
 ## Authors
 Multitudes of books have multiple authors, leading to a list of authors as feature. This would cause the same problem as the original genre values, as there’s a lot of features with little value to the model due to their scarcity. As such, I was not going to use the authors’ names as a feature in my model. However, I still wanted to feed some of that information to the model, so I created the following features for the number of authors a book has: 
