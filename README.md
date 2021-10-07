@@ -6,8 +6,7 @@ The below list shows the projects I finished during the course, including my two
 
 | Chapter | Subject | File |
 |:------- | :-----: | :--: |
-|Data Wrangling | JSON manipulation | [Link](#) |
-| | SQL Practice | [Link](#https://github.com/scho-git/springboard/tree/main/mini_projects/SQLite) |
+|Data Wrangling | SQL Practice | [Link](#https://github.com/scho-git/springboard/blob/main/mini_projects/SQLite/SQLite_country_club.ipynb) |
 | | API practice with Quandl API and analyzing financial market data | [Link](#https://github.com/scho-git/springboard/blob/main/mini_projects/api_data_wrangling_mini_project.ipynb) |
 | Statistical Methods for Data Analysis | Frequentist Statistics | [Link](#https://github.com/scho-git/springboard/tree/main/mini_projects/frequentist_casestudy) |
 | | Hypothesis Testing & Permutation Test | [Link](#https://github.com/scho-git/springboard/blob/main/mini_projects/hypothesis_testing/Springboard%20Apps%20project%20-%20Tier%203%20-%20Complete.ipynb) |
